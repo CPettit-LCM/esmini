@@ -55,6 +55,7 @@ namespace scenarioengine
 		double trail_follow_s_;  // only in case of hybrid_external following a ghost
 		Control control_;
 		double speed_;
+		double acceleration_;
 		double wheel_angle_;
 		double wheel_rot_;
 		roadmanager::Position pos_;

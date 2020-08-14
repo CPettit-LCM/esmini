@@ -147,7 +147,7 @@ namespace scenarioengine
 
 				OSCBoundingBox bbox; // dummy bariable just to feed into the function
 
-				scenarioGateway->reportObject(0, "Ego", 0, 1, bbox,0, buf.speed, buf.wheel_angle, wheel_rot,  buf.x, buf.y, buf.z, buf.h, buf.p, buf.r);
+				scenarioGateway->reportObject(0, "Ego", 0, 1, bbox,0, buf.speed, 0, buf.wheel_angle, wheel_rot,  buf.x, buf.y, buf.z, buf.h, buf.p, buf.r);
 
 				mutex.Unlock();
 			}

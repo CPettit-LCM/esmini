@@ -366,6 +366,12 @@ return;
 		OSCAction::End();
 	}
 
+	if (dt > SMALL_NUMBER) 
+	{
+		// Only update acceleration when dt != 0, else keep old acceleration
+		object_->acceleration_ = (new_speed - object_->speed_) / dt;
+	}
+
 	object_->speed_ = new_speed;
 }
 
